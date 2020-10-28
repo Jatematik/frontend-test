@@ -18,7 +18,6 @@ $(document).ready( function() {
     });
 
     $('.main__button').on('click', function(){
-        $('.main__arrow').toggleClass('main__arrow-active');
         $('.main__button').toggleClass('main__button-active');
         $('.main__box').toggleClass('main__box-active');
     });
