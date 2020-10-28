@@ -21,10 +21,10 @@
                     <img src="img/logo.png" alt="Icon: logo" class="header__img">
                 </div>
                 <div class="header__nav">
-                    <div class="header__login">
-                        <a class="header__login-link" href="#">AREA RISERVATA</a>
+                    <a href="#" class="header__login">
+                        <span class="header__login-link" href="#">AREA RISERVATA</span>
                         <img class="header__login-icon" src="img/lock.png" alt="Icon: lock">
-                    </div>
+                    </a>
                     <ul class="header__links">
                         <li class="header__link"><a href="#">HOME</a></li>
                         <li class="header__link" id="item"><a href="#">AZIENDA</a>
@@ -84,6 +84,36 @@
         </div>
     </header>
     <!-- /header -->
+
+    <!-- Модальное окно -->
+    <div class="modal">
+        <div class="modal__inner">
+            <div class="modal__overlay"></div>
+            <div class="model__dialog">
+                <h2 class="modal__title">AREA RISERVATA</h2>
+                <div class="modal__group">
+                    <form action="#" class="modal__form">
+                        <h2 class="modal__form-title">ACCEDI</h2>
+                        <input type="email" class="modal__input" placeholder="E-mail" required>
+                        <input type="password" class="modal__input" placeholder="Password" required>
+                        <button class="modal__button">ACCEDI</button>
+                        <span class="modal__text">Password dimenticata</span>
+                    </form>
+                    <form action="#" class="modal__form">
+                        <h2 class="modal__form-title">REGISTRATI</h2>
+                        <input type="text" class="modal__input" placeholder="Nome" required>
+                        <input type="text" class="modal__input" placeholder="Cognome" required>
+                        <input type="email" class="modal__input" placeholder="E-mail" required>
+                        <input type="password" class="modal__input" placeholder="Password" required>
+                        <span class="modal__checkbox"><input type="checkbox" class="modal__input-checkbox">Acconsento al trattamento dei dati</span>
+                        <span class="modal__checkbox"><input type="checkbox" class="modal__input-checkbox">Mi iscrivo alla Newsletter</span>
+                        <button class="modal__button">ISCRIVITI</button>
+                    </form>
+                </div>
+                <i class="fas fa-times modal__close"></i>
+            </div>
+        </div>
+    </div>
 
     <!-- Мэйн -->
 

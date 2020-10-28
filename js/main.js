@@ -26,9 +26,22 @@ $(document).ready( function() {
         console.log('hover');
         $('.header__menu').toggleClass('header__menu-active');
     });
+
     $('#menu-item').hover(function(){
         console.log('hover');
         $('.header__menu').toggleClass('header__menu-active');
+    });
+
+    $('.header__login').on('click', function(){
+        $('.modal').addClass('modal-active');
+    });
+
+    $('.modal__close').on('click', function(){
+        $('.modal').removeClass('modal-active');
+    });
+
+    $('.modal__overlay').on('click', function(){
+        $('.modal').removeClass('modal-active');
     });
 
     var mySwiper = new Swiper('.swiper-container', {
