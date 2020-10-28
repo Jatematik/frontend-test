@@ -99,7 +99,10 @@ body {
 }
 .header__mobile-visible--active {
   display: block;
-  background-color: #000000;
+  background-color: #252425;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(37, 36, 37, 0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(37, 36, 37, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(37, 36, 37, 0.75);
   z-index: 50;
 }
 .header__button-mobile {
@@ -118,11 +121,221 @@ body {
   height: 2px;
   background-color: #ffffff;
 }
+.header__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Стили мэйн */
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.main__content {
+  padding-top: 251px;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/background-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 670px;
+}
+
+.swiper-pagination {
+  bottom: 40px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #e2d1a6;
+}
+
+.main__block {
+  padding: 18px 30px;
+  margin-left: auto;
+  max-width: 531px;
+  background-color: #ffffff;
+  opacity: 0.85;
+  z-index: 10;
+}
+
+.main__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #020202;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.main__text {
+  margin: 0;
+  padding-right: 30px;
+  color: #000000;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+}
+
+.main__button {
+  height: 28px;
+  width: 82px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: none;
+  transform: translateX(-41px);
+  cursor: pointer;
+  outline: none;
+  z-index: 50;
+  transition: 0.25s;
+  background-color: #ffffff;
+}
+
+.main__button-active {
+  transform: translate(-41px, -172px);
+}
+
+.main__arrow {
+  height: 16px;
+  width: 39px;
+  margin: auto;
+  text-align: center;
+  background-image: url(../img/arrow-top.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.main__arrow-active {
+  background-image: url(../img/arrow-bottom.png);
+}
+
+.main__box {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  left: 50%;
+  transform: translate(-50%, 172px);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.25s;
+  z-index: 100;
+}
+
+.main__box-active {
+  transform: translate(-50%, 0);
+}
+
+.main__box-info {
+  position: relative;
+  color: #000000;
+  height: 172px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 44px 42px 15px;
+  background-color: #e2d1a6;
+  overflow: auto;
+}
+
+.main__box-info:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.main__box-info:nth-child(3) {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main__box-title {
+  margin: 0;
+  font-family: 'Playfair Display';
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+
+.main__box-text {
+  height: 50px;
+  overflow: auto;
+  margin: 0;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24.99px;
+}
+
+.main__box-link {
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24.99px;
+}
+
+/* Стили футер */
+
+.footer {
+  padding: 40px 0 18px 0;
+}
 
 /* Медиа запросы */
+
+@media (max-width: 1700px) {
+  .main__content {
+    background-size: cover;
+    background-position: center top;
+  }
+}
+@media (max-width: 1350px) {
+  .main__content {
+    background-size: 125%;
+    background-position: center 30%;
+  }
+}
 @media (max-width: 1260px) {
   .header-container {
     max-width: 95%;
+  }
+}
+@media (max-width: 1180px) {
+  .main__content {
+    background-size: auto;
+    background-position: top;
   }
 }
 @media (max-width: 868px) {
@@ -155,6 +368,9 @@ body {
   .header__link {
     margin-left: 15px;
     margin-bottom: 15px;
+  }
+  .header__link:first-child {
+    margin-left: 15px;
   }
   .header__link:last-child {
     margin-bottom: 0;

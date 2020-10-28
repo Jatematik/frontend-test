@@ -8,6 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -47,8 +48,6 @@
             </div>
         </div>
 
-        
-
         <!-- Мобильное меню -->
 
         <div class="header__mobile-visible">
@@ -59,10 +58,79 @@
                 <li class="header__link"><a href="#">NEWS</a></li>
                 <li class="header__link"><a href="#">CONTATTI</a></li>
             </ul>
+            <i class="fas fa-times header__close"></i>
         </div>
+
     </header>
     <!-- /header -->
+
+    <!-- Мэйн -->
+
+    <section class="main">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                   <div class="main__content">
+                       <div class="main__block">
+                           <h1 class="main__title">Lampadari contemporanei</h1>
+                           <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                       </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main__content">
+                        <div class="main__block">
+                            <h1 class="main__title">Lampadari contemporanei</h1>
+                            <p class="main__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dolorem iusto ducimus ad. Reprehenderit dolor esse voluptas ratione quibusdam, magnam amet quis iure! Deleniti delectus inventore exercitationem. Incidunt possimus explicabo dicta voluptates odio aperiam doloremque, officiis eos, numquam quia ipsum doloribus sed aliquid, sit molestiae officia. Iusto eius quibusdam magnam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="main__content">
+                        <div class="main__block">
+                            <h1 class="main__title">Lampadari contemporanei</h1>
+                            <p class="main__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nam iste sequi quam ipsa assumenda unde ipsum fuga est ab?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <button class="main__button">
+            <div class="main__arrow"></div>
+        </button>
+
+        <div class="main__box">
+            <div class="main__box-info">
+                <h2 class="main__box-title">Stai pensando ad un progetto?</h2>
+                <p class="main__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore</p>
+                <a href="#" class="main__box-link">Approfondisci</a>
+            </div>
+            <div class="main__box-info">
+                <h2 class="main__box-title">Vi aspettiamo alla fiera Euroluce</h2>
+                <p class="main__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                <a href="#" class="main__box-link">Approfondisci</a>
+            </div>
+            <div class="main__box-info">
+                <h2 class="main__box-title">Scopri la nuova collezione</h2>
+                <p class="main__box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore </p>
+                <a href="#" class="main__box-link">Approfondisci</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        
+    </footer>
+
+<script src="https://kit.fontawesome.com/946e0639a7.js" crossorigin="anonymous"></script>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
