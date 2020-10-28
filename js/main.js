@@ -22,6 +22,15 @@ $(document).ready( function() {
         $('.main__box').toggleClass('main__box-active');
     });
 
+    $('#item').hover(function(){
+        console.log('hover');
+        $('.header__menu').toggleClass('header__menu-active');
+    });
+    $('#menu-item').hover(function(){
+        console.log('hover');
+        $('.header__menu').toggleClass('header__menu-active');
+    });
+
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
