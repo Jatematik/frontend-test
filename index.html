@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lampadari contemporanei</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
@@ -17,12 +19,12 @@
     <header class="header">
         <div class="header-container">
             <div class="header-wrapper">
-                <div class="header__logo">
+                <a href="#" class="header__logo">
                     <img src="img/logo.png" alt="Icon: logo" class="header__img">
-                </div>
+                </a>
                 <div class="header__nav">
                     <a href="#" class="header__login">
-                        <span class="header__login-link" href="#">AREA RISERVATA</span>
+                        <span class="header__login-link">AREA RISERVATA</span>
                         <img class="header__login-icon" src="img/lock.png" alt="Icon: lock">
                     </a>
                     <ul class="header__links">
@@ -44,7 +46,6 @@
                         <li class="header__link"><a href="#">CONTATTI</a></li>
                     </ul>
                 </div>
-                <!-- header__nav -->
                 <div class="header-mobile">
                     <div class="header__login">
                         <a class="header__login-link" href="#">AREA RISERVATA</a>
@@ -83,13 +84,12 @@
             <i class="fas fa-times header__close"></i>
         </div>
     </header>
-    <!-- /header -->
 
     <!-- Модальное окно -->
     <div class="modal">
         <div class="modal__inner">
             <div class="modal__overlay"></div>
-            <div class="model__dialog">
+            <div class="modal__dialog">
                 <h2 class="modal__title">AREA RISERVATA</h2>
                 <div class="modal__group">
                     <form action="#" class="modal__form">
@@ -105,8 +105,9 @@
                         <input type="text" class="modal__input" placeholder="Cognome" required>
                         <input type="email" class="modal__input" placeholder="E-mail" required>
                         <input type="password" class="modal__input" placeholder="Password" required>
-                        <span class="modal__checkbox"><input type="checkbox" class="modal__input-checkbox">Acconsento al trattamento dei dati</span>
-                        <span class="modal__checkbox"><input type="checkbox" class="modal__input-checkbox">Mi iscrivo alla Newsletter</span>
+                        <div class="modal__input-group"><input type="checkbox" class="modal__input-checkbox"><span class="modal__checkbox">Acconsento al trattamento dei
+                            dati</span></div>
+                        <div class="modal__input-group"><input type="checkbox" class="modal__input-checkbox"><span class="modal__checkbox">Mi iscrivo alla Newsletter</span></div>
                         <button class="modal__button">ISCRIVITI</button>
                     </form>
                 </div>
@@ -202,8 +203,9 @@
                     <form action="#" class="footer__form">
                         <input type="text" class="footer__input" placeholder="Nome e Cognome" required>
                         <input type="email" class="footer__input" placeholder="Email" required>
-                        <span class="footer__input-text"><input type="checkbox" class="footer__checkbox" required>Acconsento al trattamento dei
-                            dati</span>
+                        <div class="footer__group">
+                            <input type="checkbox" class="footer__checkbox" required><span class="footer__input-text">Acconsento al trattamento dei dati</span>
+                        </div>
                         <button class="footer__button">ISCRIVITI</button>
                     </form>
                 </div>
@@ -215,7 +217,7 @@
                 <span class="footer__info-text">Via Feltrina 00</span>
                 <span class="footer__info-text">31111 Pederobba (TV)</span>
                 <span class="footer__info-text">0423.123456</span>
-                <span class="footer__info-text"><a href="mailto:info@mmlampadari.mm">info@mmlampadari.mm</a></span>
+                <span class="footer__info-text"><a href="mailto:info@mmlampadari.mm" class="footer__info-mail">info@mmlampadari.mm</a></span>
                 <span class="footer__info-text">P.IVA 04123456789</span>
             </div>
            <div class="footer__content">

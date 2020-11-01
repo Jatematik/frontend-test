@@ -23,12 +23,10 @@ $(document).ready( function() {
     });
 
     $('#item').hover(function(){
-        console.log('hover');
         $('.header__menu').toggleClass('header__menu-active');
     });
 
     $('#menu-item').hover(function(){
-        console.log('hover');
         $('.header__menu').toggleClass('header__menu-active');
     });
 
